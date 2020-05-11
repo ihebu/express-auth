@@ -54,6 +54,6 @@ As this project mainly features authentication, it includes a few security mesur
 
 **AS PRODUCTION APPS REQUIRE A LOT MORE SECURITY MESURES**
 
-If you intent to use this code (or any code) in production, please consult a security expert.
+If you intend to use this code (or any code) in production, please consult a security expert.
 
 You can also check [expressjs.com](https://expressjs.com/en/advanced/best-practice-security.html) for more security tips.
