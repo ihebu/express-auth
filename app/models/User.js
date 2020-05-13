@@ -33,11 +33,6 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-// hash the password before saving it to database
-UserSchema.pre("save", async function () {
-  this.password = await this.hash(this.password);
-});
-
 UserSchema.methods.hash = async function (password) {
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(password, salt);

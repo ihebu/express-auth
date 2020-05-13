@@ -14,6 +14,8 @@ router.post("/", valid(validateSignup), async (req, res) => {
   }
   // create user object
   user = new User(req.body);
+  // Hash the password
+  user.password = await user.hash(req.body.password);
   // store user in database
   await user.save();
   // send verification email
