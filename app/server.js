@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 const rateLimit = require("express-rate-limit");
+const compression = require("compression");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -18,6 +19,7 @@ app.use(express.json({ limit: "10kb" }));
 app.use(limiter);
 app.use(helmet());
 app.use(cookieParser());
+app.use(compression());
 app.use("/api/user", require("./routes/user/index"));
 app.use("/api/auth", require("./routes/auth/index"));
 app.use(require("./middleware/error"));
