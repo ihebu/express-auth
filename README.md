@@ -4,7 +4,6 @@ boilerplate for express and mongodb apps with REST api authentication
 
 ## Features
 
-- [Node.JS](https://nodejs.org)
 - [Express](https://github.com/expressjs/express)
 - [MongoDB](https://www.mongodb.com/) with [Mongoose](https://github.com/Automattic/mongoose)
 - [JWT](https://jwt.io/)
