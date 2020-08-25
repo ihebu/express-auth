@@ -49,10 +49,8 @@ As this project mainly features authentication, it includes a few security mesur
 - Using JSON web token for authentication
 - Preventing brute force attacks with express-rate-limit
 
-**HOWEVER, THIS IS ONLY THE MINIMUM OF SECURITY, AND THIS CODE IS NOT MEANT FOR PRODUCTION**
+**However, those are only the bare minimum of security measures, so don't just use it blindly in your production environment. This is meant mainly for learning purposes or for small side projects**
 
-**AS PRODUCTION APPS REQUIRE A LOT MORE SECURITY MESURES**
-
-If you intend to use this code (or any code) in production, please consult a security expert.
+If you intend to use this code (or any code) in production, you have to consult a security expert.
 
 You can also check [expressjs.com](https://expressjs.com/en/advanced/best-practice-security.html) for more security tips.
